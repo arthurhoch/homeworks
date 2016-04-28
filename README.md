@@ -4,7 +4,7 @@ In this reposisitory you will find my homeworks from my class of computer scienc
 
 Like:
 --
-Lists, Graphs, Games (in shell) ...
+Lists, Graphs, Games (in command line) ...
 
 # Trabalho de casa
 
