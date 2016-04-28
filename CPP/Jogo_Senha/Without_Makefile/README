@@ -1,0 +1,21 @@
+##########################################################################
+Para compilar é só executar o arquivo copile.sh.
+
+$ ./copile.sh
+
+Caso não funcione atribua permissão:
+
+$ chomod +x copile.sh
+
+E depois execute:
+
+$ ./copile.sh
+
+Obs: O shell escript copile.sh, compila todos os .cpp da pasta com
+a flag "lcurses"
+
+Depois é só executar o jogo:
+
+$ ./jogosenha
+
+##########################################################################
