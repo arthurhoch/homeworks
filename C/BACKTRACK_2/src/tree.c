@@ -10,6 +10,7 @@ alloc_node(int weight, int value, char *name)
 	node->weight = weight;
 	node->value = value;
 	node->side = false;
+	node->inbag = false;
 
 	node->left = NULL;
 	node->right = NULL;
@@ -58,5 +59,6 @@ add_right(BTREE *node, int weight, int value, char *name)
 {
 	node->right = alloc_node( (node->weight + weight), (node->value + value), name );
 	node->right->prev = node;
+	node->right->inbag = true;
 	return  node->right;
 }

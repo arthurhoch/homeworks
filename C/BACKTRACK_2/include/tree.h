@@ -7,6 +7,7 @@
 
 typedef struct BTREE{
 	bool side;
+	bool inbag;
 	struct BTREE *prev;
 	struct BTREE *left;
 	struct BTREE *right;

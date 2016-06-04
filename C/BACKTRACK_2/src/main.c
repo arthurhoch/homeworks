@@ -3,15 +3,14 @@
 void
 go_root(BTREE *node)
 {
-	int len = 10;
-	int count = 0;
 	puts("Way { ");
 	while(node != NULL){
-		count++;
-		printf("%s ", node->name);
+		if(node->inbag == true)
+		{
+			printf("([%s],", node->name);
+			printf("[%d])", node->weight);
+		}
 		node = node->prev;
-		if((count % len) == 0 )
-			puts("\n");
 	}
 	puts(" }\n");
 	return;
